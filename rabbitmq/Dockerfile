@@ -1,0 +1,12 @@
+FROM bitnami/rabbitmq:3.8
+LABEL maintainer=”michael.luo0801@gmail.com”
+
+ENV RABBITMQ_DEFAULT_USER: "rabbitmq"
+ENV RABBITMQ_DEFAULT_PASS: "rabbitmq"
+ENV RABBITMQ_DEFAULT_VHOST: "/"
+
+
+EXPOSE 4369
+EXPOSE 5672
+EXPOSE 25672
+EXPOSE 15672
